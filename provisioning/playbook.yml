@@ -134,6 +134,7 @@
         drupal_site_exists: "{{ drupal_site.stat.exists|default(false) }}"
 
     - include: tasks/sshd.yml
+    - include: tasks/extras.yml
     - include: tasks/www.yml
     - include: tasks/apparmor.yml
       when: ansible_os_family == 'Debian' and drupalvm_database == 'mysql'
