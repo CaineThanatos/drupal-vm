@@ -17,6 +17,17 @@
 # Don't use composer to build a local Paddle website.
 build_composer_project: false
 
+# If you need to run multiple instances of Drupal VM, set a unique hostname,
+# machine name, and IP address for each instance.
+vagrant_hostname: drupalvm.dev
+vagrant_machine_name: drupalvm
+#vagrant_ip: 192.168.88.88
+
+vagrant_memory: 2048
+vagrant_cpus: 2
+vagrant_cpuexecutioncap: 100
+vagrant_videomemory: 16
+
 # Our Drupal code resides in the main synced directory, not in a 'drupal/web'
 # sub folder.
 drupal_core_path: "/var/www/drupalvm"
@@ -67,4 +78,4 @@ php_version: "5.6"
 firefox_version: '40.0'
 
 # Connect to the IDE on host machine to accept the debugging session.
-php_xdebug_remote_host: 10.0.2.2
+# php_xdebug_remote_host: 10.0.2.2
