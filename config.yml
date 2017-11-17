@@ -29,7 +29,7 @@ installed_extras:
   - drush
   # - memcached
   - selenium
-  # - solr
+  - solr
   # - varnish
   - xdebug
 
@@ -39,6 +39,7 @@ installed_extras:
 extra_packages:
   - fluxbox
   - php7.1-zip
+  - php7.1-soap
   - rungetty
   - sqlite
   - unzip
